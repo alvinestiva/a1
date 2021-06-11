@@ -6,9 +6,34 @@
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>Bootstrap Introduction and Simple Styles Activity</title>
 </head>
 <body>
+	<!-- Nav bar -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top smoothScroll">
+	  <a class="navbar-brand" href="#">ARE</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#">Home </a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#project">Projects</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#tool">Tools</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#contact">Contacts</a>
+	      </li>
+	    </ul>  
+	  </div>
+	</nav>
 	<div class="jumbotron jumbotron-fluid">
 	  <div class="container">
 	  	<div class="row">
@@ -29,7 +54,7 @@
 			
 			
 		</div>
-		<h4 class="text-center">Projects</h4>
+		<h4 class="text-center" id="project">Projects</h4>
 		<!-- First Row -->
 		<div class="row mt-3 mb-4">
 			<div class="col-sm-12 col-md-6 order-md-1 order-2">
@@ -54,9 +79,9 @@
 				<p class="text-justify">Lorem ipsum keme keme keme 48 years warla ma-kyonget pinkalou at ang otoko na pinkalou chopopo kasi mabaho boyband ano tungril lulu doonek jowa Mike valaj waz bongga Gino ganders otoko ma-kyonget tetetet juts guash katagalugan shontis sa katagalugan bigalou at waz at nang at ano matod planggana at ang at bakit at nang ng waz quality control thunder kasi sudems chopopo at bakit na thunder valaj sa at balaj katagalugan at lulu chopopo at ang tetetet at ma-kyonget kirara chapter at shonget bongga lorem ipsum keme keme at bakit pamenthol at bakit mashumers bonggakea ano na ang shonget bongga bigalou bigalou urky juts pranella chaka ng nakakalurky klapeypey-klapeypey at ang shonget kasi ano shontis at bakit bakit na keme oblation intonses.</p>
 			</div>
 		</div>
-		<h3 class="text-center">Tools</h3>
+		<h3 class="text-center" id="tool">Tools</h3>
 		<div>
-			<div class="d-flex flex-wrap justify-content-center mb-4">
+			<div class="d-flex flex-wrap justify-content-center mb-6">
 			    <img width="80" src="images/logo-html5.png"/>
 			    <img width="80" src="images/logo-css3.png"/>
 			    <img width="80" src="images/logo-bootstrap.png"/>
@@ -73,6 +98,27 @@
 			    <img width="80" src="images/logo-gitlab-ci-cd.png"/>
 			</div>
 		</div>
+		<h3 class="text-center mt-4" id="contact">Contact</h3>
+            <div class="row justify-content-center mb-4">
+                <div class="col-sm-12 col-md-5">
+                    <form>
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea class="form-control"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success btn-block">Send</button>
+                    </form>
+                </div>
+            </div>
+
 	</div>
 		
 
